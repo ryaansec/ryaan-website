@@ -249,17 +249,94 @@ nav {
     }
   }
   
-/* Example media query for screens smaller than 768px */
-@media (max-width: 768px) {
-    .main {
-      height: auto; /* Adjust height as needed for content */
+
+  
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
     }
-  
-    .hero {
-      width: 100%; /* Make the hero section full width */
-      padding: 20px; /* Adjust padding for spacing */
+
+    .first {
+        flex-wrap: wrap;
     }
-  
-    /* Add more styles for smaller screens as needed */
-  }
-  
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* Your default styles here */
+
+/* Media query for screens smaller than 600px (common for smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Selectors and styles to be applied only on screens smaller than 600px */
+    .element-to-hide {
+        display: body; /* Hide the specified element on smaller screens */
+    }
+
+    /* Additional adjustments for smaller screens */
+}
