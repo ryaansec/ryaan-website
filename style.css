@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
-
+/*Image default Background*/
 * {
     padding: 0;
     margin: 0;
@@ -27,8 +26,8 @@ body {
 }
 @keyframes slideshow {
     0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); } /* Image 1 stays for 15% of the total animation duration */
-    15%, 30% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); } /* Image 2 stays for 15% of the total animation duration */
-    30%, 45% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg"); } /* Image 3 stays for 15% of the total animation duration */
+    15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg");} /* Image 2 stays for 15% of the total animation duration */
+    30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); } /* Image 3 stays for 15% of the total animation duration */
     45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); } /* Image 4 stays for 15% of the total animation duration */
     60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); } /* Image 5 stays for 15% of the total animation duration */
 }
@@ -72,26 +71,6 @@ body.about-page {
     background-color: black;
 }
 
-nav {
-    max-width: 60vw;
-    justify-content: space-between;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: 100px;
-}
-
-nav img {
-    color: red;
-    width: 130px;
-    position: relative;
-    z-index: 10;
-}
-
-nav button {
-    position: relative;
-    z-index: 10;
-}
 
 .hero {
     font-family: 'Martel Sans', sans-serif;
@@ -125,7 +104,7 @@ nav button {
     text-align: center;
 }
 
-.separation {
+.separation { /*Seperation border*/
     height: 7px;
     background-color: rgb(46, 44, 44);
     position: relative;
@@ -171,186 +150,6 @@ nav button {
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
-}
-
-/*.first {
-    display: flex;
-    justify-content: center;
-    max-width: 70vw;
-    margin: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}*/
-.first > div {
-    margin-top: 0; /* Remove margin above the div */
-}
-
-
-
-.secImg {
-    position: relative;
-}
-
-.secImg img {
-    width: 555px;
-    position: relative;
-    z-index: 10;
-}
-
-.secImg video {
-    position: absolute;
-    top: 51px;
-    right: 0;
-    width: 555px;
-}
-
-section.first>div {
-    display: flex;
-    flex-direction: column;
-    padding: 34px 0;
-}
-
-section.first>div :nth-child(1) {
-    font-size: 48px;
-    font-weight: bolder;
-}
-
-
-section.first>div :nth-child(2) {
-    font-size: 24px;
-
-}
-
-
-.faq h2 {
-    text-align: center;
-    font-size: 48px;
-}
-
-.faq {
-    background: black;
-    color: white;
-    padding: 34px;
-}
-
-.faqbox:hover {
-    background-color: #414141;
-    color: white;
-}
-
-.faqbox svg {
-    filter: invert(1);
-}
-
-.faqbox {
-    transition: all 1s ease-out;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #2d2d2d;
-    padding: 24px;
-    max-width: 60vw;
-    margin: 34px auto;
-    cursor: pointer;
-}
-
-footer {
-    color: white;
-    max-width: 60vw;
-    margin: auto;
-    padding: 60px;
-}
-
-footer .questions {
-    padding: 34px 0;
-}
-
-
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: white;
-}
-
-
-
-@media screen and (max-width: 1300px) {
-
-    nav{
-        max-width: 90vw;
-    }
-
-    .first {
-        flex-wrap: wrap;
-    }
-
-    .secImg img {
-        width: 305px;
-    }
-
-    .secImg video {
-        width: 305px;
-    }
-
-    .hero> :nth-child(1) {
-        font-size: 32px;
-    }
-
-    .hero> :nth-child(2) {
-        font-size: 18px;
-    }
-
-    .hero> :nth-child(3) {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .faq h2 {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    footer {
-        max-width: 90vw;
-        padding: 75px 0;
-    }
-
-    .footer-item{
-        align-items: center;
-    }
- 
-
-}
-
-
-
-@media screen and (max-width: 1300px) {
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-}
-
-
-.footer a {
-    font-size: 14px;
-    color: white;
-}
-
-.footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
 }
 
 /*ROUGHT */
@@ -402,8 +201,51 @@ nav {
     align-items: center;
 }
 
-nav div {
-    margin-left: 120%; /* Move the "About" button to the left corner */
-    margin-right: 20px; /* Add right margin for spacing */
-}
-
+/*nav div {
+    margin-left: 120%; /* Move the "About" button to the left corner 
+    margin-right: 20px; /* Add right margin for spacing 
+}*/
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #writing-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid white; /* Adjust thickness of cursor */
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite, erase-write 4s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
+  /* Keyframes to erase and write again */
+  @keyframes erase-write {
+    0%, 30% {
+      content: "Video on Security Research paper coming soon!"; /* Initial text */
+    }
+    35%, 100% {
+      content: ""; /* Empty text to simulate erasing */
+    }
+  }
+  
