@@ -249,3 +249,17 @@ nav {
     }
   }
   
+/* Example media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main {
+      height: auto; /* Adjust height as needed for content */
+    }
+  
+    .hero {
+      width: 100%; /* Make the hero section full width */
+      padding: 20px; /* Adjust padding for spacing */
+    }
+  
+    /* Add more styles for smaller screens as needed */
+  }
+  
