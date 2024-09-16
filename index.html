@@ -8,35 +8,40 @@
 
     <meta name="description" content="Blogs related to cybersecurity stuff, mainly focused on Vulnerability Research.">
 
-
-  <meta name="author" content="ryaansec">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_IN">
-<meta property="og:site_name" content="ryaansec">
-<meta property="og:title" content="ryaansec">
-<meta property="og:url" content="https://ryaansec.github.io/">
-
+    <meta name="author" content="ryaansec">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="ryaansec">
+    <meta property="og:title" content="ryaansec">
+    <meta property="og:url" content="https://ryaansec.github.io/">
 
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Add custom styles here */
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
         h2 {
-            color: white; /* Set text color to white */
-            font-weight: bold; /* Set font weight to bold */
-            margin-top: 20px; /* Add some top margin for spacing */
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
         }
 
         .archive__item-title a {
-            color: red; /* Set text color of link to red */
-            text-decoration: none; /* Remove underline from link */
+            color: red;
+            text-decoration: none;
         }
 
         .page__meta-readtime {
-            color: red; /* Set text color of "17 minute read" to red */
+            color: red;
         }
 
         .archive__item-excerpt {
-            color: red; /* Set text color of excerpt to red */
+            color: red;
         }
 
         .about-link {
@@ -47,114 +52,116 @@
             font-weight: bold;
             text-decoration: none;
         }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+
+        .btn-red {
+            background-color: red;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-red a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .btn-red {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .about-link {
+                top: 10px;
+                right: 10px;
+                font-size: 14px;
+            }
+
+            .container h3 {
+                font-size: 16px;
+            }
+
+            .about-link {
+                margin-left: 0;
+                right: 10px;
+            }
+
+            li.itemprop {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 16px;
+            }
+
+            .btn-red {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .container h3 {
+                font-size: 14px;
+            }
+
+            li.itemprop span {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div class="box"></div>
         <div class="hero">
             <h2><span>What the $SHELL</span></h2>
             <h2>Passionate about security research and will be sharing insights from various research papers 
                 and writing article</h2>
             <div class="hero-buttons">
-                <!--<p type="info" placeholder="Start CTFs">-->
-                <button class="btn btn-red"> <a href="https://discord.gg/GDm2aVNz" style="color: white;">
-                     Join the CTF team &gt;</button></p> </a>
+                <button class="btn btn-red"><a href="https://discord.gg/GDm2aVNz">Join the CTF team &gt;</a></button>
             </div>
             <div class="container">
                 <h3 id="writing-text">Video on Security Research paper coming soon!</h3>
-              </div>
+            </div>
         </div>
-
-        <!--<div>
-            <a href="about.html"class="about-link" style="margin-top: 20px; margin-right: 95%;">
-                 About</a>
-                 
-        </div>-->
 
         <div>
-
-            <div>
-                <a href="https://darknetdiaries.com/" class="about-link"
-                style="color: #cccccccc; text-decoration: none; font-family: Arial, sans-serif; 
-                font-size: 20px; font-weight: bold; display: block; margin-left: 80%; margin-top: 20px;"> Pictures from Darknet Diaries</a>
-            </div>
-            
-
-
-
-
-
-<!-- Rough links start -->
-
-<li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
-    <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> 
-    <span itemprop="name" class="p-locality" 
-    style="margin-top: 60px; margin-right: 90%; color: #cccccccc;  font-weight: bold; 
-    position: absolute; left: 0; top: 9px;">India</span>
-  </li>
-  
-
-
-
-<li>
-    <a href="https://twitter.com/ryaansec" class="about-link" style="position: absolute; left: 0; top: 40px;">
-        <span class="label" style="color: white; font-weight: bold;">Twitter</span>
-    </a>
-</li>
-s
-
-<!--<li>
-    <a href="https://github.com/ryaansec" class="about-link" >
-        <i class="fab fa-fw fa-github"></i>
-        <span class="label" style="margin-top: 20px; margin-right: 95%; color: white; font-weight: bold;">GitHub</span>
-    </a>
-</li>-->
-
-
-<!---
-<li>
-    <a href="mailto:ryaanencrypt@gmail.com" class="about-link" rel="me" class="u-email" 
-    style="margin-top: 60px; margin-right: 95%; color: white; font-weight: bold;">
-
-        <meta itemprop="email" content="ryaanencrypt@gmail.com">
-        <i class="fas fa-fw fa-envelope-square" ></i>
-        <span class="label">Email</span>
-    </a>
-</li>-->
-        <!--</div>
+            <a href="https://darknetdiaries.com/" class="about-link">Pictures from Darknet Diaries</a>
         </div>
-        
-    <br>
-    <div class="separation"></div>
-    <br>-->
 
-    <!---
-    <h2 class="archive__item-title no_toc" itemprop="headline" style="background-color: transparent;">
-        <a href="https://de-engineer.github.io/Virtual-Address-Translation-and-structure-of-PTE/" rel="permalink">Exploring the process of virtual memory address translation and structure of a page table entry.</a>
-    </h2>
-    <a href="https://www.google.com">
-        <span class="page__meta-readtime" style="color: white;">
-            <i class="far fa-clock" aria-hidden="true"></i>
-            17 minute read
-        </span>
-        <p class="archive__item-excerpt" itemprop="description" style="color: white;">
-            We will explore the process of address translation of VAs, what information they store and how can we use Windows API functions to query information of pages. Part 2 of last blog post.
-        </p>
-        <hr class="custom-line">
-        <br>
-        <h3>Hello bak</h3>
-        <br>
-    </a>-->
+        <li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
+            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> 
+            <span itemprop="name" class="p-locality">India</span>
+        </li>
 
-    <!--<h2 class="archive__item-title no_toc" itemprop="headline" style="background-color: transparent;">
-        <a href="https://twitter.com/ryaansec/" rel="permalink">
-            COMMING SOON</a>
-    </h2>-->
-
-
-
+        <li>
+            <a href="https://twitter.com/ryaansec" class="about-link">
+                <span class="label">Twitter</span>
+            </a>
+        </li>
+    </div>
 </body>
 
 </html>
