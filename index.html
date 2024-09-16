@@ -7,7 +7,6 @@
     <title>ryaansec</title>
 
     <meta name="description" content="Blogs related to cybersecurity stuff, mainly focused on Vulnerability Research.">
-
     <meta name="author" content="ryaansec">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_IN">
@@ -17,7 +16,7 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        /* General styles */
+        /* Base styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -80,54 +79,78 @@
             padding: 20px;
         }
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
+        /* Media Queries for screens 430px and above */
+        @media (min-width: 430px) {
             .hero h2 {
+                font-size: 22px;
+            }
+
+            .btn-red {
+                width: auto;
+                padding: 12px 24px;
                 font-size: 18px;
             }
 
-            .btn-red {
-                width: 100%;
-                padding: 15px;
+            .container h3 {
+                font-size: 18px;
             }
 
             .about-link {
-                top: 10px;
-                right: 10px;
-                font-size: 14px;
-            }
-
-            .container h3 {
                 font-size: 16px;
-            }
-
-            .about-link {
-                margin-left: 0;
-                right: 10px;
-            }
-
-            li.itemprop {
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h2 {
-                font-size: 16px;
-            }
-
-            .btn-red {
-                width: 100%;
-                padding: 10px;
-                font-size: 14px;
-            }
-
-            .container h3 {
-                font-size: 14px;
+                top: 15px;
+                right: 15px;
             }
 
             li.itemprop span {
-                font-size: 12px;
+                font-size: 14px;
+            }
+        }
+
+        /* Additional Media Queries for screens 768px and above (tablets) */
+        @media (min-width: 768px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .btn-red {
+                padding: 15px 30px;
+                font-size: 20px;
+            }
+
+            .container h3 {
+                font-size: 20px;
+            }
+
+            .about-link {
+                font-size: 18px;
+            }
+
+            li.itemprop span {
+                font-size: 16px;
+            }
+        }
+
+        /* Additional Media Queries for screens 1024px and above (desktops) */
+        @media (min-width: 1024px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .btn-red {
+                padding: 20px 40px;
+                font-size: 22px;
+            }
+
+            .container h3 {
+                font-size: 22px;
+            }
+
+            .about-link {
+                font-size: 20px;
+            }
+
+            li.itemprop span {
+                font-size: 18px;
             }
         }
     </style>
@@ -138,7 +161,7 @@
         <div class="hero">
             <h2><span>What the $SHELL</span></h2>
             <h2>Passionate about security research and will be sharing insights from various research papers 
-                and writing article</h2>
+                and writing articles</h2>
             <div class="hero-buttons">
                 <button class="btn btn-red"><a href="https://discord.gg/GDm2aVNz">Join the CTF team &gt;</a></button>
             </div>
