@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ryaansec</title>
+
+    <meta name="description" content="Blogs related to cybersecurity stuff, mainly focused on Vulnerability Research.">
+
+    <meta name="author" content="ryaansec">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="ryaansec">
+    <meta property="og:title" content="ryaansec">
+    <meta property="og:url" content="https://ryaansec.github.io/">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        h2 {
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .archive__item-title a {
+            color: red;
+            text-decoration: none;
+        }
+
+        .page__meta-readtime {
+            color: red;
+        }
+
+        .archive__item-excerpt {
+            color: red;
+        }
+
+        .about-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+
+        .btn-red {
+            background-color: red;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-red a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .btn-red {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .about-link {
+                top: 10px;
+                right: 10px;
+                font-size: 14px;
+            }
+
+            .container h3 {
+                font-size: 16px;
+            }
+
+            .about-link {
+                margin-left: 0;
+                right: 10px;
+            }
+
+            li.itemprop {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 16px;
+            }
+
+            .btn-red {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .container h3 {
+                font-size: 14px;
+            }
+
+            li.itemprop span {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="hero">
+            <h2><span>What the $SHELL</span></h2>
+            <h2>Passionate about security research and will be sharing insights from various research papers 
+                and writing article</h2>
+            <div class="hero-buttons">
+                <button class="btn btn-red"><a href="https://discord.gg/GDm2aVNz">Join the CTF team &gt;</a></button>
+            </div>
+            <div class="container">
+                <h3 id="writing-text">Video on Security Research paper coming soon!</h3>
+            </div>
+        </div>
+
+        <div>
+            <a href="https://darknetdiaries.com/" class="about-link">Pictures from Darknet Diaries</a>
+        </div>
+
+        <li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
+            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> 
+            <span itemprop="name" class="p-locality">India</span>
+        </li>
+
+        <li>
+            <a href="https://twitter.com/ryaansec" class="about-link">
+                <span class="label">Twitter</span>
+            </a>
+        </li>
+    </div>
+</body>
+
+</html>
