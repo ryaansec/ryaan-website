@@ -16,7 +16,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 644px;
+    height: 100vh; /* Full viewport height */
     position: relative;
     overflow: hidden;
     animation: slideshow 300s infinite;
@@ -32,7 +32,7 @@ body {
 }
 
 .main .box {
-    height: 644px;
+    height: 100%; /* Full height of the parent */
     width: 100%;
     opacity: 0.69;
     position: absolute;
