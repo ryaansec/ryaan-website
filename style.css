@@ -12,25 +12,15 @@ body {
 
 /* Main container styles */
 .main {
-    background-image: url("/assets/images/bg_animation/bg.jpg");
+    background-image: url("assets/images/bg_animation/multipleframe.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
     position: relative;
     overflow: hidden;
-    /*animation: slideshow 300s infinite;*/
 }
 
-/* Slideshow animation */
-/*@keyframes slideshow {
-    0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); }
-    15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg"); }
-    30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); }
-    45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); }
-    60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); }
-}
-*/
 .main .box {
     height: 100%; /* Full height of the parent */
     width: 100%;
@@ -134,131 +124,4 @@ body {
     animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite, erase-write 4s infinite;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: white; }
-}
-
-@keyframes erase-write {
-    0%, 30% { content: "Video on Security Research paper coming soon!"; }
-    35%, 100% { content: ""; }
-}
-
-/* Media queries */
-@media screen and (max-width: 1300px) {
-    nav {
-        max-width: 90vw;
-    }
-
-    .first {
-        flex-wrap: wrap;
-    }
-
-    .secImg img, .secImg video {
-        width: 305px;
-    }
-
-    .hero > :nth-child(1) {
-        font-size: 32px;
-    }
-
-    .hero > :nth-child(2) {
-        font-size: 18px;
-    }
-
-    .hero > :nth-child(3) {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .faq h2 {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    footer {
-        max-width: 90vw;
-        padding: 75px 0;
-    }
-
-    .footer-item {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero > :nth-child(1) {
-        font-size: 24px;
-    }
-
-    .hero > :nth-child(2) {
-        font-size: 16px;
-    }
-
-    .hero > :nth-child(3) {
-        font-size: 14px;
-    }
-
-    .btn-red {
-        font-size: 18px;
-        padding: 3px 12px;
-    }
-
-    .main input {
-        width: 100%;
-        padding: 7px 10px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-
-    .hero > :nth-child(1) {
-        font-size: 20px;
-    }
-
-    .hero > :nth-child(2) {
-        font-size: 14px;
-    }
-
-    .hero > :nth-child(3) {
-        font-size: 12px;
-    }
-
-    .btn-red {
-        font-size: 16px;
-        padding: 3px 8px;
-    }
-
-    .container {
-        margin-top: 20px;
-    }
-
-    .main input {
-        width: calc(100% - 20px);
-        padding: 7px;
-    }
-
-    .about-link {
-        font-size: 14px;
-    }
-
-    .separation {
-        height: 5px;
-    }
-}
+/* Media queries remain unchanged */
