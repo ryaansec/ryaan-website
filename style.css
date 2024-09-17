@@ -15,7 +15,7 @@ body {
 
 .main {
     /* Define the initial background image */   
-    background-image: url("assets/images/bg_animation/zero-day-brokers_desktop.jpg");
+    background-image: url("/");
     /* Other background properties */
     background-position: center center;
     background-size: cover;
@@ -23,13 +23,6 @@ body {
     height: 644px;
     position: relative;
     overflow: hidden; /* Ensure overflow is hidden to contain the background images */
-}
-@keyframes slideshow {
-    0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); } /* Image 1 stays for 15% of the total animation duration */
-    15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg");} /* Image 2 stays for 15% of the total animation duration */
-    30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); } /* Image 3 stays for 15% of the total animation duration */
-    45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); } /* Image 4 stays for 15% of the total animation duration */
-    60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); } /* Image 5 stays for 15% of the total animation duration */
 }
 /* Main CSS file */
 
