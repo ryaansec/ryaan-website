@@ -19,18 +19,18 @@ body {
     height: 100vh; /* Full viewport height */
     position: relative;
     overflow: hidden;
-    animation: slideshow 300s infinite;
+    /*animation: slideshow 300s infinite;*/
 }
 
 /* Slideshow animation */
-@keyframes slideshow {
+/*@keyframes slideshow {
     0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); }
     15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg"); }
     30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); }
     45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); }
     60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); }
 }
-
+*/
 .main .box {
     height: 100%; /* Full height of the parent */
     width: 100%;
