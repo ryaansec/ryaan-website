@@ -1,4 +1,4 @@
-/*Image default Background*/
+/* Base styles */
 * {
     padding: 0;
     margin: 0;
@@ -6,64 +6,39 @@
 }
 
 body {
-    background-color: black;
-}
-body {
     background-color: #1f242c; /* Pale blue background color */
+    color: white;
 }
 
-
+/* Main container styles */
 .main {
-    /* Define the initial background image */   
-    background-image: url("/");
-    /* Other background properties */
+    background-image: url("assets/images/bg_animation/bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 644px;
+    height: 100vh; /* Full viewport height */
     position: relative;
-    overflow: hidden; /* Ensure overflow is hidden to contain the background images */
-}
-/* Main CSS file */
-
-/* Custom styles for the about section */
-body.about-page {
-    background-image: url("assets/images/bg_animation/zero-day-brokers_desktop.jpg");
-    background-size: cover;
-    background-position: center top 10%; /* Center the background image horizontally and align it 20% from the top */
-    
+    overflow: hidden;
+    animation: slideshow 300s infinite;
 }
 
-
-
-
-
-
-.main {
-    /* Apply the slideshow animation */
-    animation: slideshow 300s infinite; /* Total duration of 300 seconds (5 minutes) */
+/* Slideshow animation */
+@keyframes slideshow {
+    0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); }
+    15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg"); }
+    30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); }
+    45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); }
+    60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); }
 }
-body.about-page {
-    background-image: url("assets/images/bg_animation/zero-day-brokers_desktop.jpg");
-    background-size: cover;
-    background-position: center top 10%;
-    color: white; /* Set text color to white */
-    padding: 20px; /* Add padding for better readability */
-    font-family: Arial, sans-serif; /* Set font family */
-}
-
-
-
 
 .main .box {
-    height: 644px;
+    height: 100%; /* Full height of the parent */
     width: 100%;
     opacity: 0.69;
     position: absolute;
     top: 0;
     background-color: black;
 }
-
 
 .hero {
     font-family: 'Martel Sans', sans-serif;
@@ -78,26 +53,26 @@ body.about-page {
     padding: 0 30px;
 }
 
-.hero> :nth-child(1) {
+.hero > :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 48px;
     text-align: center;
 }
 
-.hero> :nth-child(2) {
+.hero > :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
-.hero> :nth-child(3) {
+.hero > :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
 
-.separation { /*Seperation border*/
+.separation {
     height: 7px;
     background-color: rgb(46, 44, 44);
     position: relative;
@@ -112,7 +87,6 @@ body.about-page {
     border-radius: 4px;
     border: 1px solid white;
     cursor: pointer;
-
 }
 
 .btn-red {
@@ -145,108 +119,39 @@ body.about-page {
     border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
-/*ROUGHT */
-
-.box {
-    width: 50%; /* Adjust width as needed */
-    float: left;
-}
-
-.hero {
-    width: 50%; /* Adjust width as needed */
-    float: left;
-    padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
-}
-
-
-
-.separation {
-    clear: both; /* Clear the floats */
-}
-
-
-
-
-
-/* Add custom styles here */
-h2 {
-    color: white; /* Set text color to white */
-    font-weight: bold; /* Set font weight to bold */
-    margin-top: 20px; /* Add some top margin for spacing */
-}
-
-.archive__item-title a {
-    color: red; /* Set text color of link to red */
-    text-decoration: none; /* Remove underline from link */
-}
-
-.page__meta-readtime {
-    color: red; /* Set text color of "17 minute read" to red */
-}
-
-.archive__item-excerpt {
-    color: red; /* Set text color of excerpt to red */
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-/*nav div {
-    margin-left: 120%; /* Move the "About" button to the left corner 
-    margin-right: 20px; /* Add right margin for spacing 
-}*/
 .container {
     text-align: center;
     margin-top: 50px;
-  }
-  
-  #writing-text {
+}
+
+#writing-text {
     display: inline-block;
     overflow: hidden;
-    border-right: 0.15em solid white; /* Adjust thickness of cursor */
+    border-right: 0.15em solid white;
     white-space: nowrap;
     margin: 0;
     padding: 0;
     animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite, erase-write 4s infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: white;
-    }
-  }
-  
-  /* Keyframes to erase and write again */
-  @keyframes erase-write {
-    0%, 30% {
-      content: "Video on Security Research paper coming soon!"; /* Initial text */
-    }
-    35%, 100% {
-      content: ""; /* Empty text to simulate erasing */
-    }
-  }
-  
+}
 
-  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@keyframes erase-write {
+    0%, 30% { content: "Video on Security Research paper coming soon!"; }
+    35%, 100% { content: ""; }
+}
+
+/* Media queries */
 @media screen and (max-width: 1300px) {
-
-    nav{
+    nav {
         max-width: 90vw;
     }
 
@@ -254,23 +159,19 @@ nav {
         flex-wrap: wrap;
     }
 
-    .secImg img {
+    .secImg img, .secImg video {
         width: 305px;
     }
 
-    .secImg video {
-        width: 305px;
-    }
-
-    .hero> :nth-child(1) {
+    .hero > :nth-child(1) {
         font-size: 32px;
     }
 
-    .hero> :nth-child(2) {
+    .hero > :nth-child(2) {
         font-size: 18px;
     }
 
-    .hero> :nth-child(3) {
+    .hero > :nth-child(3) {
         font-size: 18px;
     }
 
@@ -292,44 +193,72 @@ nav {
         padding: 75px 0;
     }
 
-    .footer-item{
+    .footer-item {
         align-items: center;
     }
- 
-
 }
 
+@media screen and (max-width: 768px) {
+    .hero > :nth-child(1) {
+        font-size: 24px;
+    }
 
+    .hero > :nth-child(2) {
+        font-size: 16px;
+    }
 
-@media screen and (max-width: 1300px) {
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
 
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+    .btn-red {
+        font-size: 18px;
+        padding: 3px 12px;
+    }
+
+    .main input {
+        width: 100%;
+        padding: 7px 10px;
     }
 }
 
-
-.footer a {
-    font-size: 14px;
-    color: white;
-}
-
-.footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-}
-
-/* Your default styles here */
-
-/* Media query for screens smaller than 600px (common for smartphones) */
-@media only screen and (max-width: 600px) {
-    /* Selectors and styles to be applied only on screens smaller than 600px */
-    .element-to-hide {
-        display: body; /* Hide the specified element on smaller screens */
+@media screen and (max-width: 430px) {
+    .hero {
+        height: auto;
+        padding: 20px;
     }
 
-    /* Additional adjustments for smaller screens */
+    .hero > :nth-child(1) {
+        font-size: 20px;
+    }
+
+    .hero > :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .hero > :nth-child(3) {
+        font-size: 12px;
+    }
+
+    .btn-red {
+        font-size: 16px;
+        padding: 3px 8px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .main input {
+        width: calc(100% - 20px);
+        padding: 7px;
+    }
+
+    .about-link {
+        font-size: 14px;
+    }
+
+    .separation {
+        height: 5px;
+    }
 }
