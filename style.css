@@ -12,7 +12,7 @@ body {
 
 /* Main container styles */
 .main {
-    background-image: url("assets/images/underwater.jpg"); /* Default for larger screens (desktop/laptop) */
+    background-image: url("assets/images/bg_animation/underwater.jpg"); /* Default for larger screens (desktop/laptop) */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body {
 /* Background image for mobile devices */
 @media screen and (max-width: 768px) {
     .main {
-        background-image: url("assets/images/mobile1.jpg"); /* Mobile-specific background */
+        background-image: url("assets/images/bg_animation/mobile1.jpg"); /* Mobile-specific background */
     }
 }
 
