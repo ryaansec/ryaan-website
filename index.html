@@ -17,143 +17,15 @@
     <meta property="og:url" content="https://ryaansec.github.io/">
 
     <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* Base styles */
+        /* Ensure background covers the full screen */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-        }
-
-        h2 {
-            color: white;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .archive__item-title a {
-            color: red;
-            text-decoration: none;
-        }
-
-        .page__meta-readtime {
-            color: red;
-        }
-
-        .archive__item-excerpt {
-            color: red;
-        }
-
-        .about-link {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero-buttons {
-            margin-top: 20px;
-        }
-
-        .btn-red {
-            background-color: red;
-            padding: 10px 20px;
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .btn-red a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        /* Media Queries for screens 430px and above */
-        @media (min-width: 430px) {
-            .hero h2 {
-                font-size: 22px;
-            }
-
-            .btn-red {
-                width: auto;
-                padding: 12px 24px;
-                font-size: 18px;
-            }
-
-            .container h3 {
-                font-size: 18px;
-            }
-
-            .about-link {
-                font-size: 16px;
-                top: 15px;
-                right: 15px;
-            }
-
-            li.itemprop span {
-                font-size: 14px;
-            }
-        }
-
-        /* Additional Media Queries for screens 768px and above (tablets) */
-        @media (min-width: 768px) {
-            .hero h2 {
-                font-size: 24px;
-            }
-
-            .btn-red {
-                padding: 15px 30px;
-                font-size: 20px;
-            }
-
-            .container h3 {
-                font-size: 20px;
-            }
-
-            .about-link {
-                font-size: 18px;
-            }
-
-            li.itemprop span {
-                font-size: 16px;
-            }
-        }
-
-        /* Additional Media Queries for screens 1024px and above (desktops) */
-        @media (min-width: 1024px) {
-            .hero h2 {
-                font-size: 28px;
-            }
-
-            .btn-red {
-                padding: 20px 40px;
-                font-size: 22px;
-            }
-
-            .container h3 {
-                font-size: 22px;
-            }
-
-            .about-link {
-                font-size: 20px;
-            }
-
-            li.itemprop span {
-                font-size: 18px;
-            }
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
         }
     </style>
 </head>
@@ -187,6 +59,29 @@
             </a>
         </li>
     </div>
+
+    <!-- JavaScript to detect screen size and change the wallpaper -->
+    <script>
+        function setWallpaper() {
+            // Define media query for mobile devices (screens up to 768px wide)
+            const isMobile = window.matchMedia("(max-width: 768px)");
+
+            if (isMobile.matches) {
+                // If the screen width is 768px or less, it's considered a phone or tablet
+                document.body.style.backgroundImage = "url('assets/images/bg_animation/mobile1.jpg')";
+            } else {
+                // If the screen width is greater than 768px, it's considered a laptop/desktop
+                document.body.style.backgroundImage = "url('assets/images/bg_animation/bg.jpg')";
+            }
+        }
+
+        // Set the wallpaper when the page loads
+        setWallpaper();
+
+        // Reapply wallpaper when the window is resized
+        window.addEventListener("resize", setWallpaper);
+    </script>
+
 </body>
 
 </html>
