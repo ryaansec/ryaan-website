@@ -266,10 +266,11 @@ body {
 
 
 
-/* Make all links white */
+/* Make all links white and bold */
 a {
     color: white;  /* Change link color to white */
     text-decoration: none; /* Removes the underline */
+    font-weight: bold;  /* Makes the text bold */
 }
 
 /* Optional: Change the color of links when hovered over */
@@ -281,6 +282,7 @@ a:hover {
 .btn a {
     color: white;  /* Keep links in buttons white */
     text-decoration: none;
+    font-weight: bold;  /* Makes button links bold */
 }
 
 /* Optional: Change button link color on hover */
