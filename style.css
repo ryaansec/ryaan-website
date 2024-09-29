@@ -301,3 +301,36 @@ a:hover {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-container {
+    text-align: center; /* Center the image */
+}
+
+.responsive-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) { /* For mobile devices */
+    .responsive-image {
+        content: url('wallpaper1.jpg'); /* Change to wallpaper1 */
+    }
+}
+
