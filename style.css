@@ -12,24 +12,22 @@ body {
 
 /* Main container styles */
 .main {
-    background-image: url("assets/images/bg_animation/bg.jpg");
+    background-image: url("assets/images/underwater.jpg"); /* Default for larger screens (desktop/laptop) */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
     position: relative;
     overflow: hidden;
-   /* animation: slideshow 300s infinite;*/
+    /* animation: slideshow 300s infinite; */
 }
 
-/* Slideshow animation */
-/*@keyframes slideshow {
-    0%, 15% { background-image: url("assets/images/bg_animation/bg.jpg"); }
-    15%, 30% { background-image: url("assets/images/bg_animation/mage\ Desktop.jpg"); }
-    30%, 45% { background-image: url("assets/images/bg_animation/Noir\ Desktop.jpg"); }
-    45%, 60% { background-image: url("assets/images/bg_animation/cryptography.jpg"); }
-    60%, 75% { background-image: url("assets/images/bg_animation/underwater.jpg"); }
-}*/
+/* Background image for mobile devices */
+@media screen and (max-width: 768px) {
+    .main {
+        background-image: url("assets/images/mobile1.jpg"); /* Mobile-specific background */
+    }
+}
 
 .main .box {
     height: 100%; /* Full height of the parent */
@@ -149,7 +147,7 @@ body {
     35%, 100% { content: ""; }
 }
 
-/* Media queries */
+/* Media queries for other styles */
 @media screen and (max-width: 1300px) {
     nav {
         max-width: 90vw;
