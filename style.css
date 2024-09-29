@@ -289,3 +289,15 @@ a:hover {
 .btn a:hover {
     color: lightgray;  /* Adjust this hover color if needed */
 }
+/* Default style for mobile users (nothing changes, as they inherit white color) */
+.hero h2 span {
+    color: white;  /* Default white color for mobile */
+}
+
+/* Red color for non-mobile users */
+@media screen and (min-width: 769px) {
+    .hero h2 span {
+        color: red;  /* Red color for non-mobile users */
+    }
+}
+
