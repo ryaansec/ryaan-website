@@ -260,3 +260,30 @@ body {
         height: 5px;
     }
 }
+
+
+
+
+
+
+/* Make all links white */
+a {
+    color: white;  /* Change link color to white */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Optional: Change the color of links when hovered over */
+a:hover {
+    color: lightgray; /* You can change this to any hover color */
+}
+
+/* Special rule for buttons that contain links */
+.btn a {
+    color: white;  /* Keep links in buttons white */
+    text-decoration: none;
+}
+
+/* Optional: Change button link color on hover */
+.btn a:hover {
+    color: lightgray;  /* Adjust this hover color if needed */
+}
